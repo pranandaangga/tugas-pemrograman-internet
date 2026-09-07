@@ -8,12 +8,21 @@
 
 <body>
 
-    <header>
+    <header id="beranda">
         <h1>CV Prananda</h1>
+
+        <nav>
+            <a href="#beranda">Beranda</a> |
+            <a href="#data-diri">Data Diri</a> |
+            <a href="#pendidikan">Pendidikan</a> |
+            <a href="#keahlian">Keahlian</a> |
+            <a href="#organisasi">Organisasi</a> |
+            <a href="#kontak">Kontak</a>
+        </nav>
 
         <img src="diri.jpeg" alt="Foto Profil" width="150">
 
-        <h2>Data Diri</h2>
+        <h2 id="data-diri">Data Diri</h2>
 
         <p>
             <strong>Nama:</strong> Made Prananda Angga Yoga
@@ -43,7 +52,7 @@
 
         <hr>
 
-        <section>
+        <section id="pendidikan">
             <h2>Pendidikan</h2>
 
             <article>
@@ -81,7 +90,7 @@
 
         <hr>
 
-        <section>
+        <section id="keahlian">
             <h2>Keahlian</h2>
 
             <ul>
@@ -93,12 +102,71 @@
 
         <hr>
 
-        <section>
-            <h2>Pengalaman</h2>
+        <section id="organisasi">
+            <h2>Pengalaman Organisasi</h2>
 
-            <p>
-                Belum memiliki pengalaman kerja
-            </p>
+            <table border="1" cellpadding="8" cellspacing="0">
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Organisasi</th>
+                        <th>Jabatan/Peran</th>
+                        <th>Periode</th>
+                    </tr>
+                    
+                    <tr>
+                        <td>1</td>
+                        <td>Kiss 1 Denpasar</td>
+                        <td>Anggota</td>
+                        <td>2023-2025</td>
+                    </tr>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="kontak">
+            <h2>Formulir Kontak</h2>
+
+            <form>
+
+                <p>
+                    <label for="nama">Nama:</label><br>
+                    <input type="text" id="nama" name="nama" required>
+                </p>
+
+                <p>
+                    <label for="email">Alamat Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </p>
+
+                <p>
+                    <label for="password">Password:</label><br>
+                    <input type="password" id="password" name="password" required>
+                </p>
+
+                <p>
+                    <label>Hobi:</label><br>
+
+                    <input type="radio" id="bermain-gitar" name="hobi" value="bermain-gitar">
+                    <label for="membaca">Bermain Gitar</label><br>
+
+                    <input type="radio" id="bermain-game" name="hobi" value="bermain-game">
+                    <label for="game">Bermain Game</label><br>
+
+                    <input type="radio" id="gym" name="hobi" value="gym">
+                    <label for="pemrograman">Gym</label><br>
+                </p>
+
+                <p>
+                    <label for="kontak-lain">No. Telepon atau Alamat:</label><br>
+                    <input type="text" id="kontak-lain" name="kontak-lain">
+                </p>
+
+                <p>
+                    <button type="submit">Kirim</button>
+                </p>
+
+            </form>
         </section>
 
     </main>
