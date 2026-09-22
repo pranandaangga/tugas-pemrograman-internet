@@ -8,11 +8,6 @@ body {
     background-color: #f2f2f2;
 }
 
-
-/* =========================
-   CSS GRID - LAYOUT UTAMA
-   ========================= */
-
 .container {
     display: grid;
 
@@ -28,9 +23,6 @@ body {
     min-height: 100vh;
 }
 
-
-/* HEADER */
-
 header {
     grid-area: header;
 
@@ -42,9 +34,6 @@ header {
     text-align: center;
 }
 
-
-/* SIDEBAR */
-
 aside {
     grid-area: sidebar;
 
@@ -53,8 +42,9 @@ aside {
     padding: 25px;
 }
 
-
-/* FOTO */
+aside p {
+    overflow-wrap: break-word;
+}
 
 aside img {
     width: 150px;
@@ -64,9 +54,6 @@ aside img {
 
     border-radius: 50%;
 }
-
-
-/* NAVIGASI */
 
 nav {
     display: flex;
@@ -84,9 +71,6 @@ nav a {
     padding: 8px;
 }
 
-
-/* KONTEN UTAMA */
-
 main {
     grid-area: main;
 
@@ -95,17 +79,9 @@ main {
     background-color: #f8f8f8;
 }
 
-
-/* JARAK ANTAR SECTION */
-
 main section {
     margin-bottom: 30px;
 }
-
-
-/* =========================
-   FLEXBOX - PENDIDIKAN
-   ========================= */
 
 .pendidikan-container {
     display: flex;
@@ -136,11 +112,6 @@ main section {
     object-fit: contain;
 }
 
-
-/* =========================
-   FLEXBOX - KEAHLIAN
-   ========================= */
-
 .keahlian-container {
     display: flex;
 
@@ -157,9 +128,6 @@ main section {
     border-radius: 8px;
 }
 
-
-/* TABEL */
-
 table {
     background-color: white;
 
@@ -170,9 +138,6 @@ th,
 td {
     padding: 10px;
 }
-
-
-/* FORM */
 
 form {
     background-color: white;
@@ -187,9 +152,6 @@ input {
 
     margin-top: 5px;
 }
-
-
-/* FOOTER */
 
 footer {
     grid-area: footer;
