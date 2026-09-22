@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+
+/* =========================
+   CSS GRID - LAYOUT UTAMA
+   ========================= */
+
+.container {
+    display: grid;
+
+    grid-template-columns: 250px 1fr;
+
+    grid-template-rows: auto 1fr auto;
+
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+
+    min-height: 100vh;
+}
+
+
+/* HEADER */
+
+header {
+    grid-area: header;
+
+    background-color: #1f2937;
+    color: white;
+
+    padding: 25px;
+
+    text-align: center;
+}
+
+
+/* SIDEBAR */
+
+aside {
+    grid-area: sidebar;
+
+    background-color: white;
+
+    padding: 25px;
+}
+
+
+/* FOTO */
+
+aside img {
+    width: 150px;
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+
+/* NAVIGASI */
+
+nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+
+    padding: 8px;
+}
+
+
+/* KONTEN UTAMA */
+
+main {
+    grid-area: main;
+
+    padding: 30px;
+
+    background-color: #f8f8f8;
+}
+
+
+/* JARAK ANTAR SECTION */
+
+main section {
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FLEXBOX - PENDIDIKAN
+   ========================= */
+
+.pendidikan-container {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.pendidikan-container article {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+.pendidikan-container article img {
+    width: 100px;
+    height: 100px;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   FLEXBOX - KEAHLIAN
+   ========================= */
+
+.keahlian-container {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.skill {
+    background-color: white;
+
+    padding: 10px 20px;
+
+    border-radius: 8px;
+}
+
+
+/* TABEL */
+
+table {
+    background-color: white;
+
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+
+/* FORM */
+
+form {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+input {
+    padding: 8px;
+
+    margin-top: 5px;
+}
+
+
+/* FOOTER */
+
+footer {
+    grid-area: footer;
+
+    background-color: #1f2937;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 15px;
+}

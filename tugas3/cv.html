@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CV Prananda</title>
+
+    <link rel="stylesheet" href="cv.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header id="beranda">
+            <h1>CV Prananda</h1>
+
+            <p>Mahasiswa S1 Teknologi Informasi</p>
+        </header>
+
+
+        <!-- SIDEBAR -->
+        <aside>
+
+            <nav>
+                <a href="#beranda">Beranda</a>
+                <a href="#data-diri">Data Diri</a>
+                <a href="#pendidikan">Pendidikan</a>
+                <a href="#keahlian">Keahlian</a>
+                <a href="#organisasi">Organisasi</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+
+            <img src="diri.jpeg" alt="Foto Profil" width="150">
+
+            <h2 id="data-diri">Data Diri</h2>
+
+            <p>
+                <strong>Nama:</strong><br>
+                Made Prananda Angga Yoga
+            </p>
+
+            <p>
+                <strong>Email:</strong><br>
+                madeprananda2007@gmail.com
+            </p>
+
+            <p>
+                <strong>No. Telepon:</strong><br>
+                085********
+            </p>
+
+        </aside>
+
+
+        <!-- KONTEN UTAMA -->
+        <main>
+
+            <section>
+                <h2>Tentang Saya</h2>
+
+                <p>
+                    Saya adalah mahasiswa Teknologi Informasi yang tertarik
+                    mempelajari jaringan dan artificial intelligence (AI).
+                </p>
+            </section>
+
+
+            <section id="pendidikan">
+
+                <h2>Pendidikan</h2>
+
+                <div class="pendidikan-container">
+
+                    <article>
+                        <img
+                            src="unud.jpg"
+                            alt="Logo Universitas Udayana"
+                            width="120"
+                        >
+
+                        <div>
+                            <h3>Universitas Udayana</h3>
+
+                            <p>
+                                <strong>S1 Teknologi Informasi</strong>
+                            </p>
+
+                            <p>
+                                2025 - Sekarang
+                            </p>
+                        </div>
+                    </article>
+
+
+                    <article>
+                        <img
+                            src="sma1.png"
+                            alt="Logo SMA Negeri 1 Denpasar"
+                            width="120"
+                        >
+
+                        <div>
+                            <h3>SMA Negeri 1 Denpasar</h3>
+
+                            <p>
+                                2022 - 2025
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
+
+            <section id="keahlian">
+
+                <h2>Keahlian</h2>
+
+                <div class="keahlian-container">
+
+                    <div class="skill">
+                        Dasar C
+                    </div>
+
+                    <div class="skill">
+                        Dasar Java
+                    </div>
+
+                    <div class="skill">
+                        Dasar Jaringan
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section id="organisasi">
+
+                <h2>Pengalaman Organisasi</h2>
+
+                <table border="1" cellpadding="8" cellspacing="0">
+
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Organisasi</th>
+                        <th>Jabatan/Peran</th>
+                        <th>Periode</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>Kiss 1 Denpasar</td>
+                        <td>Anggota</td>
+                        <td>2023-2025</td>
+                    </tr>
+
+                </table>
+
+            </section>
+
+
+            <section id="kontak">
+
+                <h2>Formulir Kontak</h2>
+
+                <form>
+
+                    <p>
+                        <label for="nama">Nama:</label><br>
+                        <input type="text" id="nama" name="nama" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Alamat Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p>
+                        <label for="password">Password:</label><br>
+                        <input type="password" id="password" name="password" required>
+                    </p>
+
+                    <p>
+                        <label>Hobi:</label><br>
+
+                        <input
+                            type="radio"
+                            id="bermain-gitar"
+                            name="hobi"
+                            value="bermain-gitar"
+                        >
+                        <label for="bermain-gitar">Bermain Gitar</label><br>
+
+                        <input
+                            type="radio"
+                            id="bermain-game"
+                            name="hobi"
+                            value="bermain-game"
+                        >
+                        <label for="bermain-game">Bermain Game</label><br>
+
+                        <input
+                            type="radio"
+                            id="gym"
+                            name="hobi"
+                            value="gym"
+                        >
+                        <label for="gym">Gym</label><br>
+                    </p>
+
+                    <p>
+                        <label for="kontak-lain">
+                            No. Telepon atau Alamat:
+                        </label><br>
+
+                        <input
+                            type="text"
+                            id="kontak-lain"
+                            name="kontak-lain"
+                        >
+                    </p>
+
+                    <p>
+                        <button type="submit">Kirim</button>
+                    </p>
+
+                </form>
+
+            </section>
+
+        </main>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                &copy; 2026 Made Prananda Angga Yoga
+            </p>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
